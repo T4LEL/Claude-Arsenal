@@ -1,6 +1,6 @@
 ---
 name: monetize
-description: Use when turning a project into a money-making product - choosing the monetization model and pricing, planning Stripe integration, writing the landing page, and building the launch checklist. Run it early; pricing shapes scope.
+description: Use when turning a project into a money-making product, or when the user mentions pricing, charging, subscriptions, payments, Stripe, a landing page, or launching. Run it early - pricing shapes scope.
 ---
 
 # Monetize
@@ -29,7 +29,7 @@ Default: **Stripe**. Standard shape for a SaaS webapp:
 2. Webhook endpoint (`checkout.session.completed`, `customer.subscription.updated/deleted`) that updates the user's plan in the database; verify webhook signatures; make handlers idempotent.
 3. Stripe Customer Portal for self-serve cancel/upgrade — don't build billing UI.
 4. Gate features by the plan column in the database (server-side checks, not client-only).
-5. Test end-to-end in Stripe test mode with test cards before going live. Check context7 for current Stripe API docs — API versions change.
+5. Test end-to-end in Stripe test mode with test cards before going live. Fetch current Stripe docs via the context7 MCP tools — API versions change.
 
 Implementation goes to backend-builder; keys are env vars, never in code.
 
@@ -44,6 +44,10 @@ biz-strategist writes the copy (headline = customer outcome, pain, 3-step how, p
 - Launch channels from biz-strategist's plan, first 3 concrete actions scheduled.
 - Metric to watch weekly: visitors → signups → paid conversion. One number per stage, tracked from day one.
 
-## Report
+## Report (use exactly these sections)
 
-Model + prices chosen, MVP-to-charge feature list, integration status, launch actions with dates.
+- **Model & prices:** chosen model and tiers with concrete numbers.
+- **MVP-to-charge list:** features required to charge customer #1; everything else deferred.
+- **Integration status:** built and tested vs planned (Stripe test-mode evidence when built).
+- **Launch actions:** the first 3 concrete actions with dates.
+- **Assumptions to validate:** market/pricing assumptions not yet backed by real users.

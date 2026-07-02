@@ -5,7 +5,7 @@ Your permanent toolkit for building any app with Claude Code and Anthropic model
 ## One-time setup (per machine)
 
 1. Clone this repo.
-2. Run `.\sync.ps1` — copies `agents/` and `skills/` into `~/.claude/`.
+2. Run `.\sync.ps1` — validates every agent/skill frontmatter (fails loudly on broken files), then copies `agents/` and `skills/` into `~/.claude/` and bundles `templates/` into the deployed new-project skill.
 3. Install the companion plugins (in Claude Code: `/plugin`): **superpowers**, **frontend-design**, **playwright**, **supabase**, **context7**. They provide the process layer (brainstorming, planning, TDD, debugging, design, browser testing, live docs) — this toolkit deliberately doesn't duplicate them.
 
 After editing any agent/skill here, re-run `.\sync.ps1`.
@@ -45,6 +45,8 @@ Delegation habits (from global CLAUDE.md): don't spawn an agent for what two Gre
 - **/monetize** — model, pricing, Stripe plan, landing page, launch checklist.
 
 ## Templates (`templates/` — used by /new-project)
+
+`sync.ps1` bundles this folder into `~/.claude/skills/new-project/templates/` so the deployed skill is self-contained. Edit templates here, never the synced copy.
 
 - `CLAUDE.webapp.md` — Next.js + TypeScript + Tailwind + Supabase + Vercel (the default stack)
 - `CLAUDE.api.md` — Python + FastAPI
