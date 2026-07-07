@@ -1,6 +1,6 @@
 # Claude Arsenal
 
-Every agent and skill you'll ever need to build, ship, and monetize anything with Claude Code: 24 specialist agents, 14 lifecycle skills, and CLAUDE.md templates. This repo is the **source of truth** — it's portable for life: clone it on any machine, run `sync.ps1`.
+Every agent and skill you'll ever need to build, ship, and monetize anything with Claude Code: 25 specialist agents, 14 lifecycle skills, and CLAUDE.md templates. This repo is the **source of truth** — it's portable for life: clone it on any machine, run `sync.ps1`.
 
 ## One-time setup (per machine)
 
@@ -51,6 +51,7 @@ After editing any agent/skill here, re-run `.\sync.ps1`.
 | copywriter | sonnet | Landing/email/microcopy, blog, launch posts, store listings |
 | finance-analyst | sonnet | Unit economics, SaaS metrics, projections, runway |
 | legal-advisor | sonnet | ToS/privacy, GDPR basics, OSS licenses, contractor checklists |
+| market-analyst | sonnet | TAM/SAM/SOM sizing, competitive landscape, segments, why-now |
 
 Delegation habits (from global CLAUDE.md): don't spawn an agent for what two Grep/Read calls answer; parallelize independent agent tasks; builders get bounded tasks with acceptance criteria.
 

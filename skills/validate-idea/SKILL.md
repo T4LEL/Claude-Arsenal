@@ -37,6 +37,8 @@ Delegate to the **researcher** agent with the framing from Step 1:
 
 No evidence found is itself a finding — report it, don't paper over it with assumptions.
 
+For a deeper pass — market sizing (TAM/SAM/SOM) or a full competitive landscape — delegate to the **market-analyst** agent with the same Step 1 framing.
+
 ## Step 3 — Verdict
 
 Delegate to the **biz-strategist** agent with the Step 2 evidence:

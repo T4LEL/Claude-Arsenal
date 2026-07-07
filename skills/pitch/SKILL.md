@@ -21,7 +21,9 @@ Pitch Progress:
 
 ## Step 1 — Narrative
 
-Delegate to the **biz-strategist** agent with the product and market context: the problem, why now, the wedge, market size, moat, and an honest read of the competition. Weak or hand-wavy answers here get flagged, not smoothed over — a shaky narrative should read as shaky in the deck, not be papered over with adjectives.
+Delegate to the **biz-strategist** agent with the product and market context: the problem, why now, the wedge, moat, and an honest read of the competition. Weak or hand-wavy answers here get flagged, not smoothed over — a shaky narrative should read as shaky in the deck, not be papered over with adjectives.
+
+For the market slide, delegate to the **market-analyst** agent: TAM/SAM/SOM sized bottom-up with sources and the arithmetic shown — investors check that math first.
 
 ## Step 2 — Numbers
 
