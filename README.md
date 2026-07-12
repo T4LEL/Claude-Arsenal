@@ -1,6 +1,10 @@
 # Claude Arsenal
 
-Every agent and skill you'll ever need to build, ship, and monetize anything with Claude Code: 25 specialist agents, 14 lifecycle skills, and CLAUDE.md templates. This repo is the **source of truth** — it's portable for life: clone it on any machine, run `sync.ps1`.
+[![License: MIT](https://img.shields.io/badge/license-MIT-green.svg)](LICENSE) [![Built for Claude Code](https://img.shields.io/badge/built%20for-Claude%20Code-blueviolet)](https://claude.com/claude-code)
+
+**25 Claude Code subagents, 14 lifecycle skills, and CLAUDE.md templates — everything you need to build, ship, and monetize a product with AI, in one portable toolkit.**
+
+Specialist agents (backend, frontend, security, growth, legal, finance…) plus slash-command skills for every stage of a product's life, from idea validation to deployment, launch, and growth. This repo is the **source of truth** — portable for life: clone it on any machine, run `sync.ps1`.
 
 ## One-time setup (per machine)
 
@@ -99,3 +103,11 @@ Earn & grow:
 ## Accounts this toolkit assumes (create once)
 
 GitHub (code + CI), Vercel (hosting), Supabase (DB/auth), Stripe (payments), a domain registrar. All have free tiers except the domain.
+
+## License
+
+MIT — see [LICENSE](LICENSE). Use it, fork it, build on it.
+
+---
+
+If this toolkit saves you time, a ⭐ helps other builders find it.
