@@ -16,7 +16,7 @@ Hire Progress:
 - [ ] Step 3: Sourcing plan
 - [ ] Step 4: Interview loop
 - [ ] Step 5: Contract checklist
-- [ ] Step 6: Report
+- [ ] Report
 ```
 
 ## Step 1 — Scorecard before JD
@@ -45,7 +45,7 @@ Never cut the paid work sample to save time; unpaid "sample work" is a legal and
 
 Delegate to the **legal-advisor** agent with the role type and jurisdiction for a checklist covering: IP assignment (non-negotiable — anything built for the business belongs to the business), contractor-vs-employee classification (misclassification is a real liability, not paperwork), payment terms (rate, schedule, currency), and a trial period with an explicit exit clause.
 
-## Step 6 — Report
+## Report
 
 - **Scorecard:** the 90-day outcomes and required/nice-to-have skills.
 - **JD draft:** full text, ready to post.

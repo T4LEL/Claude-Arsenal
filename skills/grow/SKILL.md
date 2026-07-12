@@ -44,6 +44,8 @@ Route execution to the agent that owns the surface — never do the work in this
 
 Fetch current docs for any third-party integration (email provider, analytics, Stripe if the experiment touches pricing) via the context7 MCP tools before wiring it up. Keys and tokens stay in env vars, never printed into chat or committed. Nothing here gets committed, pushed, deployed, or published without the user's explicit ask.
 
+Before closing Step 4, verify the change actually works where it runs — load the page, send the test email, hit the endpoint — and capture the evidence. An experiment that never really shipped can't be measured in Step 5.
+
 ## Step 5 — Close the loop
 
 Set an explicit review date and a numeric success threshold for the experiment (e.g. "signup→activation from 38% to 45% by Aug 15"). An experiment without a threshold never closes — it just lingers. Suggest /loop or /schedule to automate the check-in so the review actually happens instead of getting forgotten.

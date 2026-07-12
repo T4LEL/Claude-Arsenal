@@ -1,6 +1,6 @@
 ---
 name: monetize
-description: Use when turning a project into a money-making product, or when the user mentions pricing, charging, subscriptions, payments, Stripe, a landing page, or launching. Run it early - pricing shapes scope.
+description: Use when turning a project into a money-making product, or when the user mentions pricing, charging, subscriptions, payments, Stripe, or a landing page. Run it early - pricing shapes scope.
 ---
 
 # Monetize
@@ -31,7 +31,7 @@ Default: **Stripe**. Standard shape for a SaaS webapp:
 4. Gate features by the plan column in the database (server-side checks, not client-only).
 5. Test end-to-end in Stripe test mode with test cards before going live. Fetch current Stripe docs via the context7 MCP tools — API versions change.
 
-Implementation goes to backend-builder; keys are env vars, never in code.
+Implementation goes to backend-builder; keys are env vars, never in code. Anything beyond this standard shape (usage-based billing, invoicing, marketplace splits) goes through /product-spec's feasibility gate before implementation.
 
 ## Step 4 — Landing page
 
@@ -39,9 +39,9 @@ biz-strategist writes the copy (headline = customer outcome, pain, 3-step how, p
 
 ## Step 5 — Launch checklist
 
-- Payments verified live with one real transaction (refund it after).
+- Payments verified live with one real transaction, refunded after. Switching to live keys and making the real charge require the user's explicit go-ahead — never run them unprompted (a refunded charge still costs the Stripe fee); until then, test-mode evidence is the bar.
 - Legal minimums: terms + privacy pages (templates fine), refund policy stated.
-- Launch channels from biz-strategist's plan, first 3 concrete actions scheduled.
+- Money-path actions only here — the first 3 with dates; channel planning and announcements belong to /launch.
 - Metric to watch weekly: visitors → signups → paid conversion. One number per stage, tracked from day one.
 
 ## Report (use exactly these sections)

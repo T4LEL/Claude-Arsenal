@@ -29,7 +29,7 @@ Every finding gets a severity — Critical / High / Medium / Low — and a concr
 
 ## Step 3 — Fix
 
-Criticals and Highs get fixed now. Route each to the right builder agent as one bounded task per fix: schema/RLS/policy issues to the **db-designer** agent, application-level issues (auth checks, input validation, headers, rate limiting) to the **backend-builder** agent. Don't batch unrelated fixes into one task — each fix needs its own verification in Step 4. Never commit, push, deploy, or publish fixes without the user's explicit ask.
+Criticals and Highs get fixed now. Route each to the right builder agent as one bounded task per fix: schema/RLS/policy issues to the **db-designer** agent, application-level issues (auth checks, input validation, headers, rate limiting) to the **backend-builder** agent, and dependency vulnerabilities to the **backend-builder** agent for patch/minor bumps or the **refactor-engineer** agent when the fix requires a major upgrade. Don't batch unrelated fixes into one task — each fix needs its own verification in Step 4. Never commit, push, deploy, or publish fixes without the user's explicit ask.
 
 ## Step 4 — Verify (mandatory)
 

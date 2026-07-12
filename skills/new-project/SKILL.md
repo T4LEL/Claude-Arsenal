@@ -56,7 +56,7 @@ python -m venv .venv; .\.venv\Scripts\Activate.ps1
 pip install fastapi "uvicorn[standard]" pytest httpx; pip freeze > requirements.txt
 ```
 
-Structure: `app/main.py` (FastAPI instance + health route), `app/routers/`, `app/models.py`, `tests/test_health.py`.
+Structure: `app/main.py` (FastAPI instance + health route), `app/routers/`, `app/models.py`, `tests/test_health.py`, `.env.example` (commented var names, no values). Add `app/db.py` and a migrations setup only when the design includes a database.
 
 **other** (CLI, extension, desktop, mobile): consult `templates/project-structures.md` for the layout, scaffold minimally with the ecosystem's official generator.
 
@@ -76,4 +76,4 @@ Run the real check and paste its real output. webapp: `npm run build`. api: `pyt
 
 ## Step 6 — Hand off
 
-Report: location, what was scaffolded, verification output. Suggest next actions: write the first vertical slice (`superpowers:writing-plans`), and if it's a paid product, run `/monetize` BEFORE building features — pricing shapes scope.
+Report: location, what was scaffolded, verification output. Suggest next actions: run `/product-spec` for anything non-trivial, write the first vertical slice (`superpowers:writing-plans`), and if it's a paid product, run `/monetize` BEFORE building features — pricing shapes scope.

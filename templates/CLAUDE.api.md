@@ -18,7 +18,7 @@ Python {{3.x}} + FastAPI + {{Postgres/Supabase | SQLite | none}} + pytest.
 - `app/main.py` — FastAPI instance, router registration, middleware
 - `app/routers/` — one file per resource
 - `app/models.py` — Pydantic schemas
-- `app/db.py` — database access
+- `app/db.py` — database access (only once the service has a database)
 - `tests/` — mirrors `app/` layout
 
 ## Rules
@@ -27,7 +27,7 @@ Python {{3.x}} + FastAPI + {{Postgres/Supabase | SQLite | none}} + pytest.
 - Every endpoint: correct status codes, structured error responses, ownership check on any user-scoped resource.
 - Secrets from env vars only; `.env.example` kept current.
 - Every new endpoint ships with tests (happy path + main failure). `pytest` passes before done — paste output.
-- Schema changes via migration files only.
+- Schema changes via migration files only (applies once a database exists).
 
 ## Deploy
 

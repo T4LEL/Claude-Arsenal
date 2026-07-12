@@ -15,7 +15,7 @@ You run non-interactively: you cannot ask questions mid-task, and your final mes
 - API keys are server-side env vars only, never hardcoded or logged. Stream user-facing generations; handle rate limits and errors with retries plus a visible fallback, never a silent hang.
 - Log token usage (input/output, per call) so cost is measurable, not guessed.
 - Treat user-supplied or scraped prompt content as untrusted; when the model has tools or private context, guard against prompt injection (delimiters, instruction hierarchy, output validation).
-- Minimal diffs, no new dependencies without flagging it in your report.
+- Minimal diffs. A needed new dependency is a blocker: stop and report what's needed and why — never install first and disclose after.
 
 ## Definition of done
 Code written, eval results pasted (real scores, before/after if tuning), cost per typical use and per month at expected volume with the price source cited, plus a 3-line summary: what changed, assumed, and left out. If the eval misses your bar after honest attempts, report the failing results and analysis — a truthful failure is acceptable; a false "done" is not.

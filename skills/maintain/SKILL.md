@@ -25,7 +25,7 @@ Pull platform logs for fresh errors (`vercel logs`, supabase MCP `get_logs`). No
 
 ## Step 2 — Dependencies
 
-Run security advisories first — `npm audit` / `pip-audit`. Critical vulnerabilities get fixed now, no exceptions. Apply patch and minor updates in the same pass. List major updates as candidates only — never auto-apply one. Delegate to the **refactor-engineer** agent with the current version, target version, and changelog/migration notes (fetched via the context7 MCP tools) as its own task; a major upgrade needs its own plan and test pass, not a slot in a routine sweep.
+Run security advisories first — `npm audit` / `pip-audit`. Critical vulnerabilities get fixed now, no exceptions. Apply patch and minor updates in the same pass. List major updates as candidates only — never auto-apply one. Exception to the ordering: when a critical vulnerability's only fix is a major bump, that upgrade task starts now instead of waiting as a candidate. Delegate to the **refactor-engineer** agent with the current version, target version, and changelog/migration notes (fetched via the context7 MCP tools) as its own task; a major upgrade needs its own plan and test pass, not a slot in a routine sweep.
 
 ## Step 3 — Verify after updates (mandatory)
 

@@ -38,7 +38,7 @@ After editing any agent/skill here, re-run `.\sync.ps1`.
 | debugger | sonnet | Root-cause investigation with evidence |
 | researcher | haiku | Library comparisons, docs research, broad exploration |
 | docs-writer | haiku | READMEs, guides, API docs (verified against code) |
-| biz-strategist | sonnet | Monetization, pricing, MVP scoping, landing copy, launch |
+| biz-strategist | sonnet | Monetization, pricing, MVP scoping, landing-copy draft, launch |
 | product-manager | sonnet | PRDs, user stories, scope cutting, prioritization |
 | ux-designer | sonnet | User flows, screen maps, IA, onboarding, usability review |
 | mobile-builder | sonnet | React Native/Expo screens, native features, store release |

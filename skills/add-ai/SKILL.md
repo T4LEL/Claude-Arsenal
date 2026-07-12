@@ -27,7 +27,7 @@ Write down, concretely: input → output, the quality bar (what a failure actual
 
 Delegate to the **ai-engineer** agent with the job definition from Step 1. It picks the simplest tier that can hit the quality bar, in order: single prompt → prompt + tools → RAG → multi-step agent. Never start one tier higher than the job needs.
 
-It also fetches the current Claude model lineup and pricing via the context7 MCP tools — do not price from memory, model names and rates change. Output: model choice with why, cost per single use, and cost per month at the Step 1 volume. Any number not backed by fetched docs is labeled an unverified assumption.
+It also fetches the current Claude model lineup and pricing from Anthropic's official docs — the built-in claude-api skill when available, else WebFetch on docs.anthropic.com; context7 covers SDK/library patterns but doesn't reliably index pricing. Do not price from memory — model names and rates change. Output: model choice with why, cost per single use, and cost per month at the Step 1 volume. Any number not backed by fetched docs is labeled an unverified assumption.
 
 ## Step 3 — Eval first
 
